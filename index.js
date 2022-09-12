@@ -34,18 +34,8 @@ app.get('/error', async (req,res)=>{
 
 app.all('/', async (req, res) => {
     console.log(process.env)
-//    let last_req = await j.get('last_req')
-//    await j.set('last_req', req.query)
-
-    res.cookie(`c`,Buffer.from('yo').toString('base64'), { 
-    domain: 'cyclic-app.com',
-    maxAge: 900000, httpOnly: true });
-    
-    console.log("Just got a request!")
-//     res.statusCode = 401
-//     res.setHeader('WWW-Authenticate','Basic')
     return res.json({
-        message: 'main bdddranch1'
+        message: 'dev'
     })
 })
 
