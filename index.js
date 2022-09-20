@@ -35,7 +35,7 @@ app.get('/error', async (req,res)=>{
 app.all('/', async (req, res) => {
     console.log(process.env)
     return res.json({
-        message: 'dev'
+        message: 'dev branch'
     })
 })
 
